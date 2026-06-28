@@ -1,0 +1,25 @@
+.metadata {
+}
+.metadata > .datetime {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+}
+.metadata > .user {
+  cursor: pointer;
+  padding: 0px 2px;
+}
+.metadata > .user > .icon {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin-right: 2px;
+  color: var(--color-app-green);
+}
+.metadata > .user > .username {
+  color: var(--color-app-greendark);
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  user-select: all;
+}

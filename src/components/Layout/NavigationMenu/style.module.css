@@ -1,0 +1,60 @@
+.navigationMenu {
+  margin-top: 60px;
+  position: fixed;
+  z-index: 0;
+  height: 100vh;
+  top: 0;
+  transition: background 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  visibility: hidden;
+}
+.navigationMenu.active {
+  background-color: rgba(55, 55, 55, 0.8);
+  width: 100vw;
+  z-index: 10;
+  visibility: visible;
+}
+.navigationMenu > ul {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transition: left 0.4s ease;
+  padding: 0;
+  height: 100vh;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: var(--color-app-blue);
+}
+.navigationMenu.active > ul {
+  left: 0;
+}
+.navigationMenu > ul > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.navigationMenu > ul > li > a {
+  padding: 16px 24px 16px 24px;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: var(--color-app-white);
+  background-color: var(--color-app-blue);
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid var(--color-app-bluedark);
+}
+
+.navigationMenu > ul > li > a > .icon {
+  margin-right: 8px;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.navigationMenu > ul > li > a:hover {
+  background-color: var(--color-app-green);
+}
+.navigationMenu > ul > li > a:hover > .icon {
+  color: var(--color-app-greendark);
+}

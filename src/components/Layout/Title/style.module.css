@@ -1,0 +1,15 @@
+.banner {
+  background-image: url("../../../assets/images/dcs-logo.svg");
+  background-size: 38px 10px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 11px;
+  padding-left: 12px;
+  text-decoration: none;
+  color: var(--color-app-bluedark);
+}
+  
+.banner>h1 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}

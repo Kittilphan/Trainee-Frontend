@@ -1,0 +1,60 @@
+.container {
+  /* background-color: rgba(var(--rgb-app-graylight), 0.8); */
+  /* padding: 4px; */
+  /* display: flex; */
+  align-items: flex-start;
+  /* border-radius: 8px; */
+}
+
+.container > .dropzone {
+  border: 2px dashed var(--color-app-graylight);
+  background-color: rgba(var(--rgb-app-graylight), 0.2);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.container > .dropzone:hover {
+  border: 2px dashed var(--color-app-blue);
+}
+
+.container > .dropzone.focused {
+  border: 2px dashed var(--color-app-blue) !important;
+  background-color: rgba(var(--rgb-app-blue), 0.2) !important;
+}
+.container > .dropzone.accept {
+  border: 2px dashed var(--color-app-green) !important;
+  background-color: rgba(var(--rgb-app-green), 0.2) !important;
+}
+.container > .dropzone.reject {
+  border: 2px dashed var(--color-app-red) !important;
+  background-color: rgba(var(--rgb-app-red), 0.2) !important;
+}
+.container > .dropzone .icon {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin: 2px 4px 0 0;
+  color: var(--color-app-graymid);
+}
+.container > .dropzone.focused .icon,
+.container > .dropzone:hover .icon {
+  color: var(--color-app-bluedark);
+}
+.container > .dropzone.accept .icon {
+  color: var(--color-app-greendark);
+}
+.container > .dropzone.reject .icon {
+  color: var(--color-app-reddark);
+}
+.container > .dropzone .label {
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+  padding: 0 4px;
+  color: var(--color-app-graydark);
+}
+.container > .dropzone .remarks {
+  font-size: 0.65rem;
+  line-height: 0.65rem;
+  margin: 4px 0;
+  padding: 0 4px;
+  color: var(--color-app-graymid);
+}

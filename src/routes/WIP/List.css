@@ -1,0 +1,39 @@
+.avatar-group {
+  display: flex;
+  gap: 0;
+  position: relative;
+}
+
+.avatar-group .react-avatar {
+  position: relative;
+  margin-left: -10px;
+  z-index: 4;
+}
+
+.avatar-group .react-avatar:nth-child(1) {
+  margin-left: 0;
+  z-index: 3;
+}
+
+.avatar-group .react-avatar:nth-child(2) {
+  z-index: 2;
+}
+
+.avatar-group .react-avatar:nth-child(3) {
+  z-index: 1;
+}
+
+.avatar-group .avatar-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -10px;
+  z-index: 0;
+}

@@ -1,0 +1,80 @@
+.document {
+	height: 40px;
+	width: 40px;
+}
+
+.venderIcon {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.statusInfo {
+	display: none;
+	margin-top: 14px;
+}
+
+.descriptionText {
+	margin-left: 0.5rem;
+	margin-top: 1rem;
+	line-height: 1.5;
+}
+
+.isCheckedMinWidth {
+	min-width: 92px;
+}
+
+.labelMinWidth {
+	min-width: 150px;
+}
+
+.limitedWidth {
+	max-width: 75%;
+}
+
+.minWidt40 {
+	min-width: 40%;
+	max-width: 80%;
+}
+
+.headerTitle {
+	border-top: 2px solid #ccc;
+	padding-top: 10px;
+}
+
+.profileIcon {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+@media (min-width: 800px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.statusInfo {
+		display: block;
+	}
+
+	.descriptionText {
+		margin-top: 0rem;
+	}
+}
+
+@media (min-width: 1037px) {
+	.headerTitle {
+		border-top: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.profileIcon {
+		width: 4rem;
+		height: 4rem;
+	}
+}

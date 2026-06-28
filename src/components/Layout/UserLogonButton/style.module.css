@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonLogin,
+.buttonLogout {
+  text-decoration: none;
+  padding: 4px 6px;
+  display: block;
+  border-radius: 6px;
+  background-color: var(--color-app-white);
+  font-size: 0.65rem;
+}
+
+.buttonLogin:hover {
+  background-color: var(--color-app-green);
+  color: var(--color-app-white);
+}
+
+.buttonLogout:hover {
+  background-color: var(--color-app-red);
+  color: var(--color-app-white);
+}
+
+.loggedon {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: bold;
+  color: var(--color-app-greendark);
+  text-transform: uppercase;
+}
+.loggedon::before {
+  content: "";
+}
+.loggedon::after {
+  content: "";
+}
+
+.loggedonRoles {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+  color: var(--color-app-graydark);
+  text-transform: capitalize;
+}

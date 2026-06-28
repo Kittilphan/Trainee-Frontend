@@ -1,0 +1,17 @@
+.statusIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.edit {
+  width: 20px;
+  height: 20px;
+}
+
+.fileStatus {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+}

@@ -1,0 +1,31 @@
+.container {
+	position: relative;
+}
+
+.editIcon {
+	position: absolute;
+	visibility: hidden;
+	width: 70%;
+	height: 70%;
+	border-radius: 50%;
+	opacity: 0.6;
+	object-fit: contain;
+	z-index: 10;
+}
+
+.container:hover .editIcon {
+	visibility: visible;
+}
+
+.profileIcon {
+	border-radius: 50%;
+	opacity: 0.8;
+	display: 'inline-block';
+}
+
+@media (min-width: 1200px) {
+	.profileIcon {
+		width: 4rem;
+		height: 4rem;
+	}
+}

@@ -1,0 +1,31 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul.wrapper > li > a {
+  text-decoration: none;
+  color: var(--color-app-bluedark);
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+}
+
+ul.wrapper > li.active > a {
+  color: var(--color-app-blue);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+ul.wrapper > li.active > a:hover {
+  color: var(--color-app-bluedark);
+}
